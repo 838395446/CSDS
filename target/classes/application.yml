@@ -1,0 +1,32 @@
+
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+
+#spring.jersey.application-path: /
+
+logging:
+    file: ./logs/info.log  # 日志文件,绝对路径或相对路径
+    path: ./logs/test.log
+    #config: # 日志配置文件,Spring Boot默认使用classpath路径下的日志配置文件,如:logback.xml
+    level:  # 日志级别
+       org.springframework.web: INFO # 配置spring web日志级别
+
+jedisconfig:
+  host: localhost
+  port: 6379
+  username:
+  password:
+
+testframeev:
+  envKey: Environment
+
+  #task_list: test_task_list #列表
+  #running_list: test_running_list #列表
+  #test_result: test_result  #哈希map
+  #junit4path:
+  #packagepath:
+
+
